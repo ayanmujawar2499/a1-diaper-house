@@ -1,0 +1,458 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f7fcff;
+    color:#333;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* HEADER */
+
+.header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:linear-gradient(90deg,#1d3557,#2563eb);
+    box-shadow:0 8px 25px rgba(29,53,87,.20);
+}
+
+.header .container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 0;
+}
+
+.logo h1{
+    color:#fff;
+    font-size:42px;
+    font-weight:700;
+}
+
+.logo p{
+    color:#d9f0f2;
+    font-size:15px;
+    margin-top:5px;
+}
+
+nav{
+    display:flex;
+    gap:25px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#fff;
+    font-weight:600;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#a8dadc;
+}
+
+/* HERO */
+
+.hero{
+    padding:80px 0;
+    background:linear-gradient(135deg,#e8f8fa,#dff3ff);
+}
+
+.hero .container{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:60px;
+}
+
+.hero-text{
+    flex:1;
+}
+
+.badge{
+    display:inline-block;
+    background:#38bdf8;
+    color:#1d3557;
+    padding:10px 18px;
+    border-radius:50px;
+    font-size:14px;
+    font-weight:600;
+    margin-bottom:20px;
+}
+
+.hero-text h2{
+    font-size:58px;
+    line-height:1.2;
+    color:#1d468f;
+    margin-bottom:20px;
+}
+
+.hero-text p{
+    font-size:18px;
+    color:#555;
+    margin-bottom:30px;
+}
+
+.buttons{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    text-decoration:none;
+    background:#1d468f;
+    color:#fff;
+    padding:14px 28px;
+    border-radius:50px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 8px 20px rgba(29,53,87,.25);
+}
+
+.whatsapp{
+    background:#25D366;
+}
+
+.hero-image{
+    flex:1;
+    text-align:center;
+}
+
+.hero-image img{
+    width:100%;
+    max-width:560px;
+    border-radius:20px;
+    box-shadow:0 20px 40px rgba(29,53,87,.18);
+}
+
+/* PRODUCTS */
+
+.products{
+    padding:90px 0;
+    background:#ffffff;
+}
+
+.products h2{
+    text-align:center;
+    font-size:42px;
+    color:#1d468f;
+    margin-bottom:50px;
+}
+
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:#fff;
+    padding:30px;
+    border-radius:20px;
+    border-top:6px solid #38bdf8;
+    box-shadow:0 12px 30px rgba(29,53,87,.10);
+    transition:.35s;
+}
+
+.card:hover{
+    transform:translateY(-12px) scale(1.03);
+    box-shadow:0 18px 35px rgba(29,53,87,.18);
+}
+
+.card h3{
+    font-size:24px;
+    color:#1d468f;
+    margin-bottom:20px;
+}
+
+.card ul{
+    list-style:none;
+    padding:0;
+}
+
+.card li{
+    padding:12px 0;
+    border-bottom:1px solid #e5f3f5;
+    font-size:17px;
+}
+
+.card li:last-child{
+    border-bottom:none;
+}
+
+/* ABOUT */
+
+.about{
+    padding:90px 0;
+    background:#f0f9ff;
+}
+
+.about h2{
+    text-align:center;
+    font-size:42px;
+    color:#1d468f;
+    margin-bottom:50px;
+}
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:30px;
+}
+
+.feature-box{
+    background:#fff;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(29,53,87,.10);
+    transition:.35s;
+    border-bottom:4px solid #38bdf8;
+}
+
+.feature-box:hover{
+    transform:translateY(-10px);
+    box-shadow:0 18px 35px rgba(29,53,87,.20);
+}
+
+.feature-box h3{
+    color:#1d468f;
+    margin-bottom:15px;
+    font-size:22px;
+}
+
+.feature-box p{
+    color:#555;
+    line-height:1.7;
+}
+
+/* CONTACT */
+
+.contact{
+    padding:90px 0;
+    background:linear-gradient(135deg,#1d468f,#2563eb);
+    color:#fff;
+    text-align:center;
+}
+
+.contact h2{
+    font-size:42px;
+    margin-bottom:30px;
+}
+
+.contact p{
+    font-size:18px;
+    margin-bottom:20px;
+    line-height:1.8;
+}
+
+.contact .btn{
+    display:inline-block;
+    margin-top:20px;
+    background:#fff;
+    color:#1d468f;
+    font-weight:700;
+}
+
+.contact .btn:hover{
+    background:#a8dadc;
+    color:#1d3557;
+}
+
+/* FOOTER */
+
+footer{
+    background:#000000c7;
+    color:#fff;
+    text-align:center;
+    padding:35px 20px;
+}
+
+footer h3{
+    font-size:28px;
+    margin-bottom:10px;
+}
+
+footer p{
+    color:#d9f0f2;
+    margin:8px 0;
+}
+
+/* WHATSAPP */
+
+.floating-whatsapp{
+    position:fixed;
+    bottom:25px;
+    right:25px;
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    background:#25D366;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.3);
+    transition:.3s;
+    z-index:999;
+}
+
+.floating-whatsapp:hover{
+    transform:scale(1.1);
+}
+
+.floating-whatsapp img{
+    width:32px;
+    height:32px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+.product-image{
+    width:130px;
+    height:130px;
+}
+
+.product-grid .card:nth-child(1) .product-image img{
+    width:130px;
+    height:130px;
+}
+
+.product-grid .card:nth-child(2) .product-image img{
+    width:130px;
+    height:130px;
+}
+
+.product-grid .card:nth-child(3) .product-image img{
+    width:135px;
+    height:135px;
+}
+.header .container{
+    flex-direction:column;
+    text-align:center;
+}
+.card{
+    padding:20px;
+}
+
+.card h3{
+    font-size:20px;
+}
+
+.product-image{
+    width:130px;
+    height:130px;
+}
+.logo h1{
+    font-size:34px;
+}
+
+nav{
+    margin-top:18px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.hero .container{
+    flex-direction:column-reverse;
+    text-align:center;
+}
+
+.hero-text h2{
+    font-size:38px;
+}
+
+.buttons{
+    justify-content:center;
+}
+
+.hero-image img{
+    max-width:350px;
+}
+
+.products h2,
+.about h2,
+.contact h2{
+    font-size:34px;
+}
+
+}
+/* PRODUCT CARD IMAGE LAYOUT */
+
+.card{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:15px;
+    min-height:220px;
+}
+
+.product-info{
+    flex:1;
+    min-width:0;
+}
+
+.card h3{
+    font-size:22px;
+    color:#1d468f;
+    margin-bottom:18px;
+    white-space:nowrap;
+}
+
+.product-image{
+    width:120px;
+    height:120px;
+    flex-shrink:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.product-image img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+}
+/* BALANCED PRODUCT IMAGES */
+
+.product-image{
+    width:150px;
+    height:150px;
+}
+
+/* Baby Diapers */
+.product-grid .card:nth-child(1) .product-image img{
+    width:225px;
+    height:225px;
+}
+
+/* Adult Diapers */
+.product-grid .card:nth-child(2) .product-image img{
+    width:150px;
+    height:150px;
+}
+
+/* Other Products */
+.product-grid .card:nth-child(3) .product-image img{
+    width:155px;
+    height:155px;
+}
